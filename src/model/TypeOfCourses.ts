@@ -1,19 +1,19 @@
-import { v4 as uuidV4 } from "uuid";
+import { v4 as uuidV4 } from "uuid"
 
-
-class Category {
-
+class TypeOfCourses {
+    
     id?: string;
-    name: string;
+    type: string;
     description: string;
+    value: number;
     created_at: Date;
 
     constructor() {
-        
         if(!this.id) {
             this.id = uuidV4();
         }
     }
 }
 
-export { Category }
+
+export { TypeOfCourses }
